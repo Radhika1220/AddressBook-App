@@ -1,3 +1,4 @@
+//getter and setter fields for input
 class AddressBookData
 {
     get fullName()
