@@ -188,7 +188,7 @@ error-output
     font-size:12px;
     font-style: oblique;
 }
-/* adding media queries
+/* adding media queries*/
 @media screen and (max-width:660px)
 {
     span > img{
