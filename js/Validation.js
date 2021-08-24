@@ -140,3 +140,20 @@ const setTextValue=(id,value) =>
   const element=document.querySelector(id);
   element.textContent=value;
 }
+//reset functionality
+
+const resetForm=() =>
+{
+   setTextValue('#name','');
+   setTextValue('#phone','');
+   setTextValue('#Address','');
+   setTextValue('#zip','');
+   setTextValue(".text-error",'');
+   setTextValue('.text-errorPhone','');
+   setTextValue('.text-errorZip','');
+   alert("Reseted!!!");
+}
+
+
+
+
