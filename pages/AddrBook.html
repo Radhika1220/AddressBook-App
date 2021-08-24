@@ -29,7 +29,7 @@
             <header class="form-head">Person Address Form
                 <div><img src="../assests/icons/closeicon.png" alt="close-icon"></div>
             </header>
-
+            <!--creating a form-->
             <div class="row-content">
                 <label for="name" class="label-text">Full Name</label>
                 <input type="text" id="name" class="input" placeholder=" Your name ..">
@@ -38,7 +38,7 @@
             <div class="row-content">
                 <label for="phone" class="label-text">Phone Number</label>
                 <input type="text" id="phone" class="input">
-                <error-output class="text-error" for="phone"></error-output>
+                <error-output class="text-errorPhone" for="phone"></error-output>
             </div>
             <div class="row-content">
                 <label for="Address" class="label-text">Address</label>
@@ -46,7 +46,6 @@
                 <error-output class="text-error" for="Address"></error-output>
             </div>
 
-            <!-- Usecase 5: start date with Day, Month and Year as Select Input Item-->
             <div class="row-content">
                 <div id="citystatezip">
                     <div class="column">
@@ -81,6 +80,7 @@
                     <div class="column">
                         <label for="Address" class="label-text">Zip Code</label>
                         <input type="text" id="zip" class="zipcode" placeholder=" Zip Code">
+                        <error-output class="text-errorZip" for="Address"></error-output>
                     </div>
 
                 </div>
@@ -88,12 +88,14 @@
             <div class="buttonParent">
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton">Add</button>
-                    <button type="reset" class="button">Reset</button>
+                    <button type="reset" class="button resetButton">Reset</button>
                 </div>
             </div>
 
         </form>
     </div>
-</body>
 
+</body>
+<script src="../js/AddressBook.js"></script>
+    <script src="../js/Validation.js"></script>
 </html>
