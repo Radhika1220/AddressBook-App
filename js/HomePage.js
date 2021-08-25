@@ -28,8 +28,8 @@ createInnerHtml = () => {
     <td>${addrBookData._zipCode}</td>
     <td>${addrBookData._phoneNum}</td>
     <td>
-        <img id="${addrBookData._name}" src="../assests/icons/delete-black-18dp.svg" alt="delete icon">
-        <img id="${addrBookData._name}" src="../assests/icons/create-black-18dp.svg" alt="create icon">
+        <img id="${addrBookData._fullName}" src="../assests/icons/delete-black-18dp.svg" alt="delete icon" onclick="remove(this)">
+        <img id="${addrBookData._fullName}" src="../assests/icons/create-black-18dp.svg" alt="create icon">
     </td>
 </tr>
     `;
@@ -38,7 +38,15 @@ createInnerHtml = () => {
 
     }
 }
-
-
-
-
+//delete operation 
+const remove= (node) =>
+{
+  let addrBookData=addrBookList.find(contact => contact._fullName == node.id);
+  if(!addrBookData) return ;
+  const index= addrBookList.map(contact => contact._fullName)
+  .indexOf(addrBookData._fullName);
+  addrBookList.splice(index,1);
+  localStorage.setItem("AddressBookList",JSON.stringify(addrBookList));
+  document.querySelector(".addr-count").textContent=addrBookList.length;
+  createInnerHtml();
+}
