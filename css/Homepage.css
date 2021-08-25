@@ -100,3 +100,56 @@ color:#42515f
   justify-content: space-between;
   align-items: center;
 }
+
+.table-main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    min-width: 800px;
+
+}
+td,th{
+    text-align: left;
+    padding:10px 10px;
+    padding-left: 40px;
+}
+
+th{
+    font-style: normal;
+    font-variant: normal;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #658292;
+    text-transform: capitalize;
+}
+
+tr{
+
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    background: #ffffff;
+}
+td{
+    font-style: normal;
+    font-variant: normal;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3D3D3D;
+
+}
+
+td img{
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+

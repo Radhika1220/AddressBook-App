@@ -26,9 +26,13 @@
     <!--header form and closse icon-->
     <div class="form-content">
         <form>
-            <header class="form-head">Person Address Form
-                <div><img src="../assests/icons/closeicon.png" alt="close-icon"></div>
-            </header>
+            <!-- Usecase 2: Create form head and Name -->
+            <div class="form-head">Person Address Form
+                <a href="../pages/Homepage.html">
+                    <span >
+                        <img src="../assests/icons/closeicon.png" class="close-icon">
+                    </span></a>
+            </div>
             <!--creating a form-->
             <div class="row-content">
                 <label for="name" class="label-text">Full Name</label>
@@ -84,18 +88,19 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="buttonParent">
-                <div class="submit-reset">
-                    <button type="submit" class="button submitButton" onClick="save()">Add</button>
-                    <button type="reset" class="button resetButton" onClick="resetForm()">Reset</button>
+
+                <div class="buttonParent">
+                    <div class="submit-reset">
+                        <button type="submit" class="button submitButton" onClick="save()">Add</button>
+                        <button type="reset" class="button resetButton" onClick="resetForm()">Reset</button>
+                    </div>
                 </div>
             </div>
-
         </form>
     </div>
 
 </body>
 <script src="../js/AddressBook.js"></script>
-    <script src="../js/Validation.js"></script>
+<script src="../js/Validation.js"></script>
+
 </html>
